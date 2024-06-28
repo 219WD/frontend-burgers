@@ -1,0 +1,48 @@
+.header__marq {
+    position: absolute;
+    bottom: -4rem;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: #ff0000;
+    overflow: hidden;
+}
+
+.header__marq-wrapp {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 8px 70px;
+}
+
+.header__marq-txt {
+    position: relative;
+    flex: 0 0 auto;
+    display: inline-block;
+    padding-right: 55px;
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: #f6f6f6;
+    font-size: 35px;
+    font-family: "Archivo Black", sans-serif;
+}
+
+.header__marq-star {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 0;
+}
+
+.header__marq-star img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .header__marq {
+        bottom: -6rem;
+        left: 0;
+    }
+}

@@ -1,0 +1,71 @@
+.container-nuestrasBurger {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: url('../assets/paper.jpg'), url('../assets/v642-nap-37-fastfood.jpg');
+    background-size: cover;
+    background-blend-mode: multiply;
+    overflow: hidden;
+}
+
+.txt-nuestrasBurger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+}
+
+.txt-nuestrasBurger .title {
+    color: #E60023;
+    font-family: "Archivo Black", sans-serif;
+}
+
+.txt-nuestrasBurger p {
+    width: 25rem;
+    text-align: left;
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.img-nB-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-nB {
+    transform: rotate(90deg);
+    filter: drop-shadow(15px 0px 15px #000000);
+}
+
+@media only screen and (max-width: 768px) {
+    .container-nuestrasBurger {
+        flex-direction: column;
+        height: auto;
+        padding: 4rem 2rem;
+    }
+
+    .txt-nuestrasBurger {
+        width: 100%;
+        text-align: center;
+    }
+
+    .txt-nuestrasBurger p {
+        width: 90%;
+    }
+
+    .img-nB-container {
+        width: 100%;
+    }
+
+    .img-nB {
+        transform: rotate(0deg);
+    }
+}

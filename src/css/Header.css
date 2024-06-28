@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background:
+        linear-gradient(rgba(244, 235, 220, 0.7), rgba(244, 235, 220, 0.7)),
+        url('../assets/paper.jpg');
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding-top: 2rem;
+}
+
+.txt {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 1rem;
+    transform: translateY(-2rem);
+}
+
+.txt h1 {
+    font-size: 50px;
+    color: #E60023;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.txt h2 {
+    color: #ff9a1a;
+    font-size: 30px;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+}
+.txt h2 span {
+    color: #E60023;
+    font-size: 30px;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+}
+
+.txt p {
+    width: 25rem;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+}
+
+.txt button {
+    width: 30vw;
+    padding: 1rem;
+    background: #ff9a1a;
+    color: #f6f6f6;
+    border: none;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.slider {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+        linear-gradient(rgba(255, 154, 26, 0.9), rgba(255, 154, 26, 0.9)),
+        url('../assets/paper.jpg');
+    background-size: cover;
+    background-blend-mode: multiply;
+    margin: auto;
+    border-end-start-radius: 50px;
+    position: relative;
+    transform: translateY(-2rem);
+}
+
+.slider img {
+    width: 40vw;
+}
+
+.buttons {
+    display: flex;
+    position: absolute;
+    bottom: 2rem;
+    right: 1rem;
+    gap: 0.5rem;
+    z-index: 1;
+}
+
+.next,
+.prev {
+    background: none;
+    border: none;
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+}
+
+.next:hover,
+.prev:hover {
+    transform: scale(1.1);
+}
+
+.arrow {
+    width: 1.5rem;
+}
+
+.arrow.right {
+    transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column-reverse;
+        height: 100vh; 
+        padding-top: 0; 
+    }
+
+    .txt {
+        width: 100%;
+        height: auto; 
+        padding: 1rem; 
+    }
+
+    .txt h1 {
+        font-size: 35px;
+    }
+
+    .txt h2,
+    .txt h2 span {
+        font-size: 25px;
+    }
+
+    .txt p {
+        width: auto;
+        padding: 0; 
+        font-size: 1.2rem;
+    }
+
+    .txt button {
+        width: 70vw; 
+        font-size: 1rem;
+    }
+
+    .slider {
+        width: 100%;
+        height: 60%; 
+    }
+
+    .slider img {
+        margin-top: 3rem;
+        width: 90vw;
+    }
+
+    .buttons {
+        top: 5rem; 
+        right: 2rem; 
+    }
+}

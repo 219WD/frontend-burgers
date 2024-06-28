@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.container-cards {
+    width: 100vw;
+    background: rgba(244, 235, 220);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1rem;
+}
+
+.container-cards .burguerIcon {
+    width: 5rem;
+}
+
+.container-cards .title {
+    color: #ff9a1a;
+    font-family: "Archivo Black", sans-serif;
+}
+
+.container-cards .title span {
+    color: #E60023;
+    font-family: "Archivo Black", sans-serif;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6rem;
+    padding: 2rem;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.card {
+    position: relative;
+    background: #f6f6f6;
+    width: 300px;
+    padding: 1rem 2rem 1rem 5rem;
+    border-radius: 30px 0px 30px 0px;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+    box-shadow: -8px 8px 5px -7px rgba(0, 0, 0, 0.75);
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+.card .burguerImg {
+    width: 100%;
+    max-width: 10rem;
+    position: absolute;
+    top: 50%;
+    left: -5rem;
+    transform: translateY(-50%);
+}
+
+.card .burguerName {
+    color: #ff9a1a;
+    font-family: "Archivo Black", sans-serif;
+    white-space: nowrap;
+}
+
+.card .burguerDescription {
+    font-size: 0.8rem;
+    font-family: "Raleway", sans-serif;
+    width: 100%;
+}
+
+.card .burguerPrice {
+    font-family: "Archivo Black", sans-serif;
+    color: #E60023;
+    text-align: right;
+    transition: opacity 0.3s ease;
+}
+
+.agregarCarrito {
+    display: none;
+    background-color: #ff9a1a;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10px 0px 10px 0px;
+    cursor: pointer;
+    font-family: "Archivo Black", sans-serif;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover .burguerPrice {
+    opacity: 0;
+}
+
+.card:hover .agregarCarrito {
+    display: flex;
+}
+
+.agregarCarrito:hover {
+    background-color: #e68a00;
+}
+
+@media only screen and (max-width: 768px) {
+    .container-cards {
+        padding: 6rem 1rem;
+    }
+
+    .container-cards .burguerIcon {
+        margin-bottom: 1rem;
+    }
+    
+    .container-cards .title {
+        font-size: 1.5rem;
+    }
+    
+    .container-cards .title span {
+        font-size: 1.5rem;
+    }
+
+    .card .burguerPrice {
+        margin-top: 0.5rem;
+    }
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4rem; 
+        justify-items: center;
+    }
+
+    .card {
+        padding: 5rem 2rem 1rem 2rem;
+    }
+
+    .card .burguerImg {
+        width: 100%;
+        max-width: 10rem;
+        position: absolute;
+        top: -30%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .agregarCarrito {
+        width: 100%;
+    }
+}
