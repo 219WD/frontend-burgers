@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../css/Header.css';
-import Mozzarella from '../assets/Mozzarella.png';
 import Arrow from '../assets/arrow.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
