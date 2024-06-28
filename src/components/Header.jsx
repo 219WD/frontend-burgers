@@ -1,7 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../css/Header.css';
-import Bondiolita from '../assets/bondiolita.png';
-import PattyMelt from '../assets/MELT-SALSA-STACKER.png';
 import Mozzarella from '../assets/Mozzarella.png';
 import Arrow from '../assets/arrow.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -15,17 +13,17 @@ const Header = () => {
         {
             name: "Pulled Pork",
             description: "Hamburguesa de bondiola de cerdo desmenuzada, queso cheddar milkaut, panceta ahumada y nuestra salsa barbacoa.",
-            image: Bondiolita
+            image: 'https://i.imgur.com/1dp7XQB.png'
         },
         {
             name: "Patty Melt",
             description: "Delicioso Patty Melt en pan de molde, queso cheddar milkaut y salsa Melt.",
-            image: PattyMelt
+            image: 'https://i.imgur.com/JftOGbD.png'
         },
         {
             name: "Mozzarella",
             description: "Sabrosa hamburguesa doble con queso cheddar milkaut, panceta ahumada y bastones de mozzarella.",
-            image: Mozzarella
+            image: 'https://i.imgur.com/nP4kfsT.png'
         }
     ];
 

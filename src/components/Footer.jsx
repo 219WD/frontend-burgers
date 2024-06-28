@@ -2,13 +2,12 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import '../css/Footer.css';
-import Logo from '../assets/Simple_Retro_Burger_Food_Label_Logo-removebg-preview.png'
 
 const Footer = () => {
   return (
     <div className='footer-container'>
       <div className="img-ft">
-        <img src={Logo} alt="Logo" />
+        <img src='https://i.imgur.com/DKkGUgU.png' alt="Logo" />
       </div>
       <div className="txt-ft">
         <h4>¡Seguinos en nuestras redes!</h4>

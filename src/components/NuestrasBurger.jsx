@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import BurgerDesarmada from '../assets/burger-desarmada.png';
 import '../css/NuestrasBurger.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -69,7 +68,7 @@ const NuestrasBurger = () => {
                 <p>Usamos los mejores ingredientes para que nuestras hamburguesas lleguen a tu mesa con una calidad premium. Nuestra carne es una mezcla de cortes premium, el mejor y mas cremoso queso cheddar, verduras frescas de nuestra huerta y una mezcla de aderezos y especias del mundo para nuestras salsas.</p>
             </div>
             <div className="img-nB-container" ref={imgNb}>
-                <img src={BurgerDesarmada} alt="" className='img-nB' />
+                <img src='https://i.imgur.com/xKassPn.png' alt="" className='img-nB' />
             </div>
         </div>
     );

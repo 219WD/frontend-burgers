@@ -3,12 +3,6 @@ import '../css/Cards.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import BurgerIcon from '../assets/burgerIcon.png';
-import Burguer1 from '../assets/bondiolita.png';
-import Burguer2 from '../assets/MELT-SALSA-STACKER.png';
-import Burguer3 from '../assets/Mozzarella.png';
-import Burguer4 from '../assets/BK_WEB_Whopper-Guacamole_1200X900_210922.png'; 
-import Burguer5 from '../assets/Stacker-Cuadruple.png'; 
-import Burguer6 from '../assets/Img_Chilli-king_carne.png'; 
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -21,37 +15,37 @@ const Cards = () => {
 
     const burgersCards = [
         {
-            burguerImg: Burguer1,
+            burguerImg: 'https://i.imgur.com/1dp7XQB.png',
             burguerName: "Pulled Pork",
             burguerDescription: "Hamburguesa de bondiola de cerdo desmenuzada, queso cheddar milkaut, panceta ahumada y nuestra salsa bbq.",
             burguerPrice: "$8000"
         },
         {
-            burguerImg: Burguer2,
+            burguerImg: 'https://i.imgur.com/JftOGbD.png',
             burguerName: "Patty Melt",
             burguerDescription: "Delicioso Patty Melt en pan de molde, queso cheddar milkaut y salsa Melt.",
             burguerPrice: "$7500"
         },
         {
-            burguerImg: Burguer3,
+            burguerImg: 'https://i.imgur.com/nP4kfsT.png',
             burguerName: "Mozzarella",
             burguerDescription: "Sabrosa hamburguesa doble con queso cheddar milkaut, panceta ahumada y bastones de mozzarella.",
             burguerPrice: "$8500"
         },
         {
-            burguerImg: Burguer4,
+            burguerImg: 'https://i.imgur.com/dbecDlg.png',
             burguerName: "Hot Guacamole",
             burguerDescription: "Deliciosa hamburguesa doble con guacamole, cebolla, lechuga, tomate y salsa de jalapeños encurtidos.",
             burguerPrice: "$9000"
         },
         {
-            burguerImg: Burguer5,
+            burguerImg: 'https://i.imgur.com/ep65MeM.png',
             burguerName: "Cuadruple",
             burguerDescription: "La pesadilla del cardiologo, hambueguesa cuadruple, queso cheddar milkaut y panceta ahumada. ",
             burguerPrice: "$12500"
         },
         {
-            burguerImg: Burguer6,
+            burguerImg: 'https://i.imgur.com/EAJ1As4.png',
             burguerName: "Americana",
             burguerDescription: "Clasica hamburguesa doble carne, doble cheddar milkaut, panceta ahumada y salsa bbq.",
             burguerPrice: "$7000"

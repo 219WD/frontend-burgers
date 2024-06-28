@@ -46,6 +46,13 @@ ul li a:hover {
     z-index: 1;
 }
 
+.carritoIcon{
+    position: absolute;
+    top: 2.5rem;
+    left: 8rem;
+    z-index: 1; 
+}
+
 .menu-icon {
     position: absolute;
     top: 2rem;
@@ -73,7 +80,7 @@ ul li a:hover {
     right: -100%; /* Empieza fuera de la pantalla */
     height: 100%;
     width: 70%; /* Ancho del menú desplegado */
-    background: linear-gradient(rgba(255, 154, 26, 0.9), rgba(255, 154, 26, 0.9)), url('../assets/paper.jpg');
+    background: linear-gradient(rgba(255, 154, 26, 0.9), rgba(255, 154, 26, 0.9)), url('https://i.imgur.com/kvoHqmc.jpg');
     background-size: cover;
     background-blend-mode: multiply;    
     display: flex;

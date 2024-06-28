@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Diseño from '../assets/Sin título-2.png'
 import '../css/Promo.css'
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -108,7 +107,7 @@ const Promo = () => {
         <div className='container-promo'>
             <div className="promo">
                 <div className="img-promo" ref={imgContainer}>
-                    <img src={Diseño} alt="" ref={imgPromo} />
+                    <img src='https://i.imgur.com/Q09itKb.png' alt="" ref={imgPromo} />
                 </div>
                 <div className="txt-promo" ref={txtPromo}>
                     <h1 className="title-promo">Super <span>promo</span></h1>

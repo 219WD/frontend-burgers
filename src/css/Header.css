@@ -12,7 +12,7 @@
     display: flex;
     background:
         linear-gradient(rgba(244, 235, 220, 0.7), rgba(244, 235, 220, 0.7)),
-        url('../assets/paper.jpg');
+        url('https://i.imgur.com/kvoHqmc.jpg');
     background-size: cover;
     background-blend-mode: multiply;
     padding-top: 2rem;
@@ -77,7 +77,7 @@
     justify-content: center;
     background:
         linear-gradient(rgba(255, 154, 26, 0.9), rgba(255, 154, 26, 0.9)),
-        url('../assets/paper.jpg');
+        url('https://i.imgur.com/kvoHqmc.jpg');
     background-size: cover;
     background-blend-mode: multiply;
     margin: auto;

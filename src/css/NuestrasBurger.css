@@ -5,7 +5,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background: url('../assets/paper.jpg'), url('../assets/v642-nap-37-fastfood.jpg');
+    background: url('https://i.imgur.com/kvoHqmc.jpg'), url('https://i.imgur.com/UCgPQLE.jpg');
     background-size: cover;
     background-blend-mode: multiply;
     overflow: hidden;

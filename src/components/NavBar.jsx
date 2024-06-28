@@ -1,9 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../css/NavBar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import Cruz from '../assets/cruz.png';
-import Logo from '../assets/Simple_Retro_Burger_Food_Label_Logo-removebg-preview.png'
 import gsap from 'gsap';
 
 const NavBar = () => {
@@ -11,9 +10,9 @@ const NavBar = () => {
 
     const tl = useRef(null);
     useEffect(() => {
-        gsap.set(".logo, .menu-icon", { scale: 0, opacity: 0 });
+        gsap.set(".logo, .menu-icon, .carritoIcon", { scale: 0, opacity: 0 });
         tl.current = gsap.timeline({ paused: true })
-            .to(".logo, .menu-icon", {
+            .to(".logo, .menu-icon, .carritoIcon", {
                 opacity: 1,
                 scale: 1,
                 delay: 1,
@@ -40,7 +39,8 @@ const NavBar = () => {
 
     return (
         <div className="nav-container">
-            <img src={Logo} alt="" className='logo' />
+            <img src='https://i.imgur.com/DKkGUgU.png' alt="" className='logo' />
+            <FontAwesomeIcon icon={faShoppingCart} size="2x" className='carritoIcon' />
             <nav className={`nav ${menuOpen ? 'open' : ''}`}>
                 <div className="close">
                     <button onClick={handleMenuClose}><img src={Cruz} alt="Close" className='cruz' /></button>
